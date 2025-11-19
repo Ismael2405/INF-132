@@ -5,10 +5,10 @@ WHERE sexo='FEMENINO'
 AND nacionalidad='PERU'
 ORDER BY apepaterno
 2.
-Select apepaterno, apematerno, nombre
-From Persona
-Where to_char(fechanac, 'yyyy') = 1990
-Order by apepaterno
+SELECT apepaterno, apematerno, nombre
+FROM persona
+WHERE TO_CHAR(fechanac, 'yyyy')='1990'
+ORDER BY apepaterno;
 3.
 Select apepaterno, apematerno, nombre
 From Persona
