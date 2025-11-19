@@ -1,9 +1,9 @@
 1.
-Select apepaterno, apematerno, nombre, nacionalidad
-From Persona
-Where sexo like 'FEMENINO'
-and nacionalidad like 'PERU'
-Order by apepaterno
+SELECT apepaterno, apematerno, nombre, nacionalidad
+FROM Persona
+WHERE sexo='FEMENINO'
+AND nacionalidad='PERU'
+ORDER BY apepaterno
 2.
 Select apepaterno, apematerno, nombre
 From Persona
