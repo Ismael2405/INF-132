@@ -27,9 +27,8 @@ WHERE totalgasto>=10000
 OR (presupuesto between 250 and 400)
 ORDER BY nombre;
 6.
-Select nombre, color, fechafund
-From Bloque
-Where color like 'AMARILLO' 
-or (color like 'ROJO')
-And (to_char(fechafund, 'mm') = '01') or (to_char(fechafund, 'mm') = '03')
-Order by nombre
+SELECT nombreb, color, fechafund
+FROM bloque
+WHERE (color like 'Rojo' OR color like 'Amarillo')
+AND TO_CHAR(fechafund, 'MM') IN ('01', '03')
+ORDER BY nombreb;
