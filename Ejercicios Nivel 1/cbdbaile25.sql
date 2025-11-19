@@ -21,11 +21,11 @@ Where categoria like 'AUTOCTONA%'
 And (costo between 3000 and 4000)
 Order by nombre_banda
 5. 
-Select nombre, presupuesto, totalgasto
-From Fraternidad
-Where presupuesto between 250 and 400
-or (totalgasto >=10000)
-Order by nombre
+SELECT nombre, presupuesto, totalgasto
+FROM fraternidad
+WHERE totalgasto>=10000
+OR (presupuesto between 250 and 400)
+ORDER BY nombre;
 6.
 Select nombre, color, fechafund
 From Bloque
